@@ -1,7 +1,7 @@
 #include <DigiKeyboard.h>
 
 void setup() {
-  //line 5-15 launches powershell
+  //line 5-15 launches powershell and enters the path for automatic windows startup
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(200);
